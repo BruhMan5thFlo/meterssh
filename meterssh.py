@@ -105,7 +105,7 @@ def main(user,password, rhost, port):
              else:
                  # let you know if you connected successfully then finish
                  print '[*] Connected to %s:%d: successfully' % (server[0], server[1])
-                 break
+                 #break
              try:
                  reverse_forward_tunnel(8021, remote[0], remote[1], client.get_transport())
              except Exception, e:
